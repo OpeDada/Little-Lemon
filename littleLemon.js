@@ -36,8 +36,8 @@ function getPrices(taxBoolean) {
   }
 
   // Implement getDiscount()
-function getDiscount(taxBoolen, guests) {
-    getPrices(taxBoolen)
+function getDiscount(taxBoolean, guests) {
+    getPrices(taxBoolean)
     if ((typeof guests === 'number') && (guests > 0 && guests <= 30)) {
         let discount = 0
         if (guests < 5) {
